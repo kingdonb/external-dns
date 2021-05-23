@@ -14,7 +14,7 @@ spec:
       paths:
       - backend:
           service:
-            name: hugo-test
+            name: test
             port:
               number: 1313
         path: /

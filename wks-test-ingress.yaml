@@ -4,8 +4,7 @@ metadata:
   annotations:
     external-dns.alpha.kubernetes.io/hostname: test.wks.kingdonb.dev
     kubernetes.io/ingress.class: traefik
-    cert-manager.io/cluster-issuer: letsencrypt-staging
-  creationTimestamp: null
+    cert-manager.io/cluster-issuer: letsencrypt-prod
   name: wks-test
   namespace: external-dns
 spec:
@@ -24,5 +23,3 @@ spec:
   - hosts:
     - test.wks.kingdonb.dev
     secretName: test-cert-tls
-status:
-  loadBalancer: {}
